@@ -1,13 +1,31 @@
+//([3, 8, 12, 4, 11, 7], 10));
+
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+ 
+  for (let index = 0; index < array.length; index++) {
+
+  const veriable = target - array[index]
+      
+  for (let myNumber = index + 1; myNumber < array.length; myNumber++){
+      
+  if (array[myNumber] === veriable) return true
+  }
 }
+return false
+}
+
 
 /* 
   Write the Big O time complexity of your function here
 */
 
 /* 
-  Add your pseudocode here
+  array of numbers
+  a target number
+  any 2 numbers in array = target number === true
+  target and arrays are already written
+  write a code that tells java to find the two numbers within the
+  array that add up to the target number
 */
 
 /*
